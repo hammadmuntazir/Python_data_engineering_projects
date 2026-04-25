@@ -1,45 +1,26 @@
-# 🌍 IMF GDP Data ETL Pipeline
+# 🐍 Python Data Engineering Projects
 
-An automated ETL (Extract, Transform, Load) pipeline that extracts country GDP data from the International Monetary Fund (IMF) via Wikipedia, transforms it into billion USD, and loads it into multiple formats for business use.
-
----
-
-## 🎯 **Project Scenario**
-
-> *An international firm expanding across countries needs an automated script to extract GDP data (in billion USD, rounded to 2 decimals) as updated by the IMF twice a year. The output must be available as JSON, CSV, and a database table, with a query to filter high-economy countries (>100B USD).*
+A collection of my data engineering projects built with Python, showcasing ETL pipelines, web scraping, data transformation, and database loading skills.
 
 ---
 
-## 🔧 **Tech Stack**
+## 📁 **Projects**
 
-| Category | Tools |
-|----------|-------|
-| Language | Python |
-| Web Scraping | Requests, BeautifulSoup |
-| Data Processing | Pandas |
-| Database | SQLite3 |
-| Output Formats | CSV, JSON, SQLite |
-| Logging | Custom log file with timestamps |
+| Project | Description | Tech Stack |
+|---------|-------------|------------|
+| **[IMF GDP ETL Pipeline](./IMF_GDP_ETL_Pipeline/)** | Extracts country GDP data from Wikipedia, transforms to billion USD, loads to CSV, JSON, and SQLite | Python, BeautifulSoup, Pandas, SQLite |
+| *More projects coming soon...* | | |
 
 ---
 
-## 📁 **Output Files**
+## 🔧 **Common Tech Stack**
 
-| File | Description |
-|------|-------------|
-| `Countries_by_GDP.csv` | CSV file with Country and GDP_USD_Billion |
-| `Countries_by_GDP.json` | JSON file with same data |
-| `World_Economies.db` | SQLite database with table `Countries_by_GDP` |
-| `countries_above_100b.csv` | Query result (GDP > 100B USD) |
-| `etl_project_log.txt` | Execution log with timestamps |
+- **Languages**: Python
+- **Libraries**: Pandas, NumPy, BeautifulSoup, Requests
+- **Databases**: SQLite, PostgreSQL
+- **Formats**: CSV, JSON, Excel
+- **Tools**: Git, Jupyter Notebook
 
 ---
 
-## 🚀 **How to Run**
-
-```bash
-# 1. Install dependencies
-pip install requests beautifulsoup4 pandas
-
-# 2. Run the script
-python etl_project_gdp.py
+## 📂 **Repository Structure**
